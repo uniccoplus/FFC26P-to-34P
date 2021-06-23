@@ -7,12 +7,16 @@ This is FFC 26P FDD I/F (Matsushita / Panasonic EME-216Y / EME-213K(KR)) convert
 
 Matsushita EME-216Y / EME-213K(KR) This is a board that converts the 26Pin FFC signal line of FDD to 34P for gotek and HxC2001.
 
+Since it is still a prototype, it is better to wait for the production to get better results.
+
 Note: We are not responsible for any troubles caused by installing this device. Please pay close attention to the installation and install it carefully.
 
 See the Wiki for details.
 
 ヤマハVL系とコルグN264,N364にFDDエミュレーターを繋ぐための変換基板です。
 ぺらぺらのFCCケーブルには5Vが流れており、斜め・逆に挿し間違うと故障しますので充分確認の上作業して下さい。
+まだ試作中だから結果が出るまで待った方がいいですよ。
+Config等はWikiに上げていきます。
 
 [to Wiki Page](../../wiki)
 
