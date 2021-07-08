@@ -1,4 +1,4 @@
-# FFC26P-to-36P
+# FFC26P-to-34P
 Replace Matsushita EME-216Y, EME-213K with FDD emulator
 
 This is FFC 26P FDD I/F (Matsushita / Panasonic EME-216Y / EME-213K(KR)) convert to FDD for gotek and HxC2001.
