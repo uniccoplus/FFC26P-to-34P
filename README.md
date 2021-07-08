@@ -26,15 +26,15 @@ Designed to be attached directly to FDD emulator.(HxC for Gotek, Flashfloppy, Hx
 
 # Requirement
 
-4k7 pull-up resistor 1/6W  x 3
+4k7 pull-up resistor 1/6W  x 2
 
 2.54mm 34P(17x2) pin-socket
 
 Molex 52045-2645 26P FFC(or Compatible Connector)
 
-2.0mm Pitch 1x3 pin-header x 3
+2.54mm Pitch 1x3 pin-header x 2
 
-2.0mm Pitch Jumper Cap x 3
+2.54mm Pitch Jumper Cap x 3
 
 Power Cable(~20cm)
 
@@ -67,7 +67,7 @@ Insert the metal part (contact) so that it touches the top.
 
 Whether to use DS0 or DS1, HxC's answer is "connect DS0".
 
-I designed it so that you can choose both.
+But, I chose DS1 because Yamaha uses DS1.
 
 Whether to use 2DD or 2HD, HxC's answer is "nothing connects".
 
@@ -78,9 +78,11 @@ I don't think anyone makes a mistake in the power line,
 but just in case, "Connect a negative line to GND."
 
 DS0とDS1のどちらを使うか、HxCの答えは"DS0を繋ぐ"です。
-私は両方選択出来るよう設計しました。
+しかしながらYamahaはDS1を使っているのでDS1を繋ぎました。
+
 2DDと2HDのどちらを使うか、HxCの答えは"何も繋がない"です。
 私は両方選択出来るよう設計しました。
+
 GNDはマイナスの意味です。間違う人はいないと思うけど。
 
 # License
