@@ -1,4 +1,4 @@
-(module morex520452645 (layer F.Cu) (tedit 60E6C85D)
+(module kicad_by_BakudaLab:morex520452645 (layer F.Cu) (tedit 60E6C85D)
   (descr 52045-2645-2)
   (tags Connector)
   (fp_text reference J** (at 15.748 -1.524) (layer F.SilkS)

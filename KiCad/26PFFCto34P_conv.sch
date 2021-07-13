@@ -28,9 +28,9 @@ F 3 "" H 4250 5050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 4850 4950 0    50   ~ 0
-READY#
+READY#DISKCHANGE#
 Text Label 4850 4850 0    50   ~ 0
-SIDE1
+SIDE1SELECT#
 Text Label 4850 4750 0    50   ~ 0
 READDATA#
 Text Label 4850 4650 0    50   ~ 0
@@ -54,7 +54,7 @@ INDEX#
 Wire Wire Line
 	4750 4950 5400 4950
 Text Notes 7400 7500 0    50   ~ 0
-Yamaha VL1/VL1m/VL7 to 34 Pin Floppy Disk Drive
+26P FFC to 34P Shugart Connector
 Text Notes 8200 7650 0    50   ~ 0
 Thursday, July 8, 2021
 $Comp
@@ -198,33 +198,31 @@ $Comp
 L Connector_Generic:Conn_02x13_Odd_Even J2
 U 1 1 60DE024B
 P 6700 4250
-F 0 "J2" H 6750 5150 50  0000 C CNN
-F 1 "FDC" H 6750 5050 50  0000 C CNN
-F 2 "kicad_by_BakudaLab:morex520452645" H 6700 4250 50  0001 C CNN
+F 0 "J2" H 6750 3400 50  0000 C CNN
+F 1 "FDC" H 6750 3500 50  0000 C CNN
+F 2 "26PFFCto34P_conv:morex520452645" H 6700 4250 50  0001 C CNN
 F 3 "~" H 6700 4250 50  0001 C CNN
 	1    6700 4250
 	1    0    0    1   
 $EndComp
 Text Label 5900 3650 0    50   ~ 0
-INDEX#
+INDEX
 Text Label 5900 3850 0    50   ~ 0
-DISKCHANGE#
-Text Label 5900 4050 0    50   ~ 0
-MOTORON#
+DISKCHANGE
 Text Label 5900 4150 0    50   ~ 0
-DIR#
+DIR
 Text Label 5900 4250 0    50   ~ 0
-STEP#
+STEP
 Text Label 5900 4350 0    50   ~ 0
-WRITEDATA#
+WRITEDATA
 Text Label 5900 4450 0    50   ~ 0
-WRITEGATE#
+WRITEGATE
 Text Label 5900 4550 0    50   ~ 0
-TRACK00#
+TRACK00
 Text Label 5900 4650 0    50   ~ 0
-WRITEPROTECT#
+WRITEPROTECT
 Text Label 5900 4750 0    50   ~ 0
-READDATA#
+READDATA
 Text Label 5900 4850 0    50   ~ 0
 SIDE1
 Wire Wire Line
@@ -256,7 +254,7 @@ Wire Wire Line
 	4150 3550 4250 3550
 Connection ~ 4250 3550
 Text Label 4850 3350 0    50   ~ 0
-DISKCHANGE#
+MODESELECT#
 NoConn ~ 4750 3750
 Wire Wire Line
 	4750 3850 5400 3850
@@ -334,7 +332,7 @@ Connection ~ 7000 3750
 Wire Wire Line
 	7000 3750 7000 3650
 Text Label 5900 3950 0    50   ~ 0
-READY#
+READY
 $Comp
 L Device:R R1
 U 1 1 60E8C0EE
@@ -349,11 +347,6 @@ $EndComp
 Wire Wire Line
 	6800 3200 6400 3200
 Connection ~ 6800 3200
-Wire Wire Line
-	6400 3500 6400 3950
-Connection ~ 6400 3950
-Wire Wire Line
-	6400 3950 6500 3950
 $Comp
 L Connector_Generic:Conn_01x03 J5
 U 1 1 60E8F61F
@@ -366,8 +359,6 @@ F 3 "~" H 6150 2950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6500 3850 5850 3850
-Wire Wire Line
 	5850 3850 5850 3050
 Wire Wire Line
 	5850 3050 5950 3050
@@ -379,19 +370,28 @@ Wire Wire Line
 	5750 2950 5750 3950
 Connection ~ 5750 3950
 Wire Wire Line
-	5750 3950 6400 3950
-Wire Wire Line
-	5650 4050 5650 2850
-Wire Wire Line
 	5650 2850 5950 2850
-Connection ~ 5650 4050
-Wire Wire Line
-	5650 4050 6500 4050
 Wire Wire Line
 	4750 3350 5500 3350
 Wire Wire Line
 	5500 3350 5500 3850
+Connection ~ 5850 3850
+Wire Wire Line
+	5750 3950 6400 3950
+Text Label 5900 3750 0    50   ~ 0
+DRIVESELECT
+Wire Wire Line
+	5850 3850 6500 3850
+Wire Wire Line
+	6400 3500 6400 3950
+Connection ~ 6400 3950
+Wire Wire Line
+	6400 3950 6500 3950
+Wire Wire Line
+	5650 2850 5650 4050
 Wire Wire Line
 	5500 3850 5850 3850
-Connection ~ 5850 3850
+Wire Wire Line
+	6500 4050 5650 4050
+Connection ~ 5650 4050
 $EndSCHEMATC
